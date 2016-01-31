@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>essay.tex</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>essay.tex</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              <p>These are the variables you change to manipulate the header.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\School}</span><span class="hljs-string">{Academic Institution}</span></span>
+<span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\Class}</span><span class="hljs-string">{Class Title}</span></span>
+<span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\Assignment}</span><span class="hljs-string">{Assignment Title}</span></span>
+<span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\Name}</span><span class="hljs-string">{Your \textsc{Name}</span></span>}
+<span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\Professor}</span><span class="hljs-string">{Professor's \textsc{Name}</span></span>}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>This can be left as <code>\today</code>, which prints today’s date upon compile, or it can be changed to reflect a due-date.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\Duedate}</span><span class="hljs-string">{\today}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>The document font size and style go here. Options include: article, report, book, letter, and many more. See the <a href="https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes">Wikibooks</a>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">documentclass</span><span class="hljs-string">[11pt]</span><span class="hljs-string">{article}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>Define paper dimensions…</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{geometry}</span></span>
+<span class="hljs-tag">\<span class="hljs-name">geometry</span><span class="hljs-string">{letterpaper}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>and begin including essential packages. These give us advanced math typesetting…</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{amssymb,amsmath,cancel}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <p>… some useful utilities for figures…</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{caption, subcaption}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>… a nicer header…</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{setspace}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>… and reduced margins by default.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{fullpage}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>Additionally, this one lets me use <code>\lipsum</code> to render Lorem Ipsum for this demo.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{lipsum}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <p>Tikz is a powerful package for graphics rendering, which we cover in a bit.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{tikz}</span></span>		<span class="hljs-comment">% for graphics</span>
+<span class="hljs-tag">\<span class="hljs-name">usetikzlibrary</span><span class="hljs-string">{decorations.pathreplacing, calc}</span></span>
+<span class="hljs-tag">\<span class="hljs-name">usetikzlibrary</span><span class="hljs-string">{snakes,shapes,decorations.text}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <p>These are custom derivative macros which I was given by Lily Chen (MIT). They are used with two arguments (<code>\d{y}{x}</code>), and print fractions of the form dy/dx. More on that later.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">let</span></span><span class="hljs-tag">\<span class="hljs-name">underdot</span>=</span><span class="hljs-tag">\<span class="hljs-name">d</span></span>
+<span class="hljs-tag">\<span class="hljs-name">renewcommand</span><span class="hljs-string">{\d}</span><span class="hljs-string">[2]</span><span class="hljs-string">{\frac{d #1}</span><span class="hljs-string">{d #2}</span></span>}
+<span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\dd}</span><span class="hljs-string">[2]</span><span class="hljs-string">{\frac{d^2 #1}</span><span class="hljs-string">{d #2^2}</span></span>}
+<span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\pd}</span><span class="hljs-string">[2]</span><span class="hljs-string">{\frac{\partial #1}</span><span class="hljs-string">{\partial #2}</span></span>}
+<span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\pdd}</span><span class="hljs-string">[2]</span><span class="hljs-string">{\frac{\partial^2 #1}</span><span class="hljs-string">{\partial #2^2}</span></span>}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <p>Also, this is pretty useful.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\degrees}</span><span class="hljs-string">{\ensuremath{^\circ}</span></span>}
+<span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{document}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>This prints the title page, which is informed by the variables from the first section. One might play with spacing and font sizes.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{titlepage}</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">newcommand</span><span class="hljs-string">{\HRule}</span><span class="hljs-string">{\rule{\linewidth}</span><span class="hljs-string">{0.5mm}</span></span>}
+    <span class="hljs-tag">\<span class="hljs-name">center</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">textsc</span><span class="hljs-string">{\LARGE \School}</span></span><span class="hljs-tag">\<span class="hljs-name">\</span><span class="hljs-string">[1.5cm]</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">textsc</span><span class="hljs-string">{\Large \Class}</span></span><span class="hljs-tag">\<span class="hljs-name">\</span><span class="hljs-string">[0.3cm]</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">HRule</span></span> <span class="hljs-tag">\<span class="hljs-name">\</span><span class="hljs-string">[0.4cm]</span></span>
+    { <span class="hljs-tag">\<span class="hljs-name">huge</span></span> <span class="hljs-tag">\<span class="hljs-name">bfseries</span></span> <span class="hljs-tag">\<span class="hljs-name">Assignment</span></span>}<span class="hljs-tag">\<span class="hljs-name">\</span><span class="hljs-string">[0.1cm]</span></span> 
+    <span class="hljs-tag">\<span class="hljs-name">HRule</span></span> <span class="hljs-tag">\<span class="hljs-name">\</span><span class="hljs-string">[1.5cm]</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{minipage}</span><span class="hljs-string">{0.4\textwidth}</span></span>
+      <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{flushleft}</span></span> <span class="hljs-tag">\<span class="hljs-name">large</span></span>
+        <span class="hljs-tag">\<span class="hljs-name">emph</span><span class="hljs-string">{Author:}</span></span><span class="hljs-tag">\<span class="hljs-name">\</span></span>
+        <span class="hljs-tag">\<span class="hljs-name">Name</span></span>
+        <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{flushleft}</span></span>
+        <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{minipage}</span></span>
+        ~
+        <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{minipage}</span><span class="hljs-string">{0.4\textwidth}</span></span>
+        <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{flushright}</span></span> <span class="hljs-tag">\<span class="hljs-name">large</span></span>
+        <span class="hljs-tag">\<span class="hljs-name">emph</span><span class="hljs-string">{Course Instructor:}</span></span> <span class="hljs-tag">\<span class="hljs-name">\</span></span>
+        <span class="hljs-tag">\<span class="hljs-name">Professor</span></span> <span class="hljs-tag">\<span class="hljs-name">\</span></span>
+      <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{flushright}</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{minipage}</span></span>
+      <span class="hljs-tag">\<span class="hljs-name">\</span><span class="hljs-string">[1cm]</span></span>
+    {<span class="hljs-tag">\<span class="hljs-name">large</span></span> <span class="hljs-tag">\<span class="hljs-name">Duedate</span></span>}<span class="hljs-tag">\<span class="hljs-name">\</span><span class="hljs-string">[3cm]</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">vfill</span></span>
+  <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{titlepage}</span></span>
+
+  <span class="hljs-tag">\<span class="hljs-name">newpage</span></span> 
+  <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{abstract}</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">lipsum</span><span class="hljs-string">[1-3]</span></span>
+  <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{abstract}</span></span>
+
+  <span class="hljs-tag">\<span class="hljs-name">newpage</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <p>This auto-generates based on the <code>\section</code>s and <code>\subsection</code>s and <code>\subsubsection</code>s in the paper.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">\<span class="hljs-name">tableofcontents</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-15">&#182;</a>
+              </div>
+              <p>Similarly, this auto-generates based on the <code>figure</code>s. There is a corresponding one for tables.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">\<span class="hljs-name">listoffigures</span></span>
+
+  <span class="hljs-tag">\<span class="hljs-name">newpage</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-16">&#182;</a>
+              </div>
+              <p>Sections are denoted with <code>\section{arg}</code>, where the <code>arg</code> is the title.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">\<span class="hljs-name">section</span><span class="hljs-string">{Section}</span></span>
+  Cras nibh. Morbi vel justo vitae lacus tincidunt ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <p>Sections can contain nested subsections, down to four-deep. These are called <code>\subsection</code>s, etc.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">\<span class="hljs-name">subsection</span><span class="hljs-string">{Derivation}</span></span>
+  Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus semper, leo velit ultricies tellus, ac venenatis arcu wisi vel nisl.</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
+              </div>
+              <p>Math may be written inline, when nested between two <code>$dollar signs$</code>: </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  Quisque ullamcorper placerat ipsum. <span class="hljs-formula">$x^2$</span>. Et, <span class="hljs-formula">$y = 10<span class="hljs-tag">\<span class="hljs-name">degrees</span></span>$</span>.
+  Praesent enim elit, rutrum at, molestie non, nonummy vel, nisl. Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus, magna.</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-19">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-19">&#182;</a>
+              </div>
+              <p>Or it can be printed formally, centered on a page.:</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-formula">$$ x^2 + y^2 = z^2 $$</span>
+  Donec eu purus. Quisque vehicula, urna sed ultricies auctor, pede lorem egestas dui, et convallis elit erat sed nulla. Donec luctus. Curabitur et nunc.</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-20">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-20">&#182;</a>
+              </div>
+              <p>We also use align environments to create continuity. Use the <code>&amp;</code> alignment mark to align the <code>=</code> signs of each equation</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{align*}</span></span>
+    z^2 &amp;= x^2 + y^2 <span class="hljs-tag">\<span class="hljs-name">\</span></span>
+    z &amp;= <span class="hljs-tag">\<span class="hljs-name">sqrt</span><span class="hljs-string">{x^2 + y^2}</span></span> <span class="hljs-tag">\<span class="hljs-name">\</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-21">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-21">&#182;</a>
+              </div>
+              <p>This is a custom macro defined above � <code>\d{x}{y}</code> won’t work everywhere.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="hljs-tag">\<span class="hljs-name">dot</span></span> z = <span class="hljs-tag">\<span class="hljs-name">d</span><span class="hljs-string">{z}</span><span class="hljs-string">{t}</span></span> &amp;= <span class="hljs-tag">\<span class="hljs-name">d</span><span class="hljs-string">{\sqrt{x^2+y^2}</span></span>}{t} = <span class="hljs-tag">\<span class="hljs-name">d</span><span class="hljs-string">{}</span><span class="hljs-string">{t}</span></span><span class="hljs-tag">\<span class="hljs-name">sqrt</span><span class="hljs-string">{x^2+y^2}</span></span>
+  <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{align*}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-22">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-22">&#182;</a>
+              </div>
+              <p>Figures and tables can be referred to from anywhere. Use a <code>\label</code> <em>below</em> each caption and <code>\ref</code>er to that label by name elsewhere.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  See Figure~<span class="hljs-tag">\<span class="hljs-name">ref</span><span class="hljs-string">{named_schematic}</span></span> on pp.~<span class="hljs-tag">\<span class="hljs-name">pageref</span><span class="hljs-string">{named_schematic}</span></span>.</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-23">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-23">&#182;</a>
+              </div>
+              <p><code>figure</code> environments can be given placement instructions, such as on their own page, or at the top or bottom of a page. Use <code>\begin{figure}[p]</code>, or <code>[b]</code>, or <code>[t]</code>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{figure}</span><span class="hljs-string">[p]</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{center}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-24">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-24">&#182;</a>
+              </div>
+              <p><code>tikzpicture</code> environments contain <code>TikZ</code> script, which is slightly different. Lines must be terminated with a <code>;</code> semicolon, and variables may be used. For more on <code>TikZ</code>, see the <a href="https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ">TikZ primer</a>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>      <span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{tikzpicture}</span></span>
+        <span class="hljs-tag">\<span class="hljs-name">coordinate</span></span>(O) at (0,0);
+        <span class="hljs-tag">\<span class="hljs-name">coordinate</span></span>(A) at (5,0);
+        <span class="hljs-tag">\<span class="hljs-name">coordinate</span></span>(B) at (5,5);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-25">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-25">&#182;</a>
+              </div>
+              <p>coordinates can be defined and then used symbolically. One could also write <code>\draw (0,0)--(5,0)--(5,5)--(0,0);</code> and achieve the same result.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="hljs-tag">\<span class="hljs-name">draw</span></span> (O)--(A)--(B)--(O);
+        <span class="hljs-tag">\<span class="hljs-name">draw</span></span> (O) circle [radius=1];</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-26">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-26">&#182;</a>
+              </div>
+              <p>Drawing lines requires points <code>(A)--(B)</code>. Arrow shape on both ends can be specified symbolically as a first option.
+Here we use the <code>calc</code> library to add coordinates (<code>($(A)+(B)$)</code>). In this case, our second point is defined in polar (<code>(angle:radius)</code>) coordinates, rather than cartesian. 
+Similarly, we mount a label (<code>node</code>) along the line, with some options. Its text is given by the contents of <code>{ }</code>, which can be any valid LaTeX.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="hljs-tag">\<span class="hljs-name">draw</span></span> [|&lt;-&gt;|] (<span class="hljs-formula">$(O)+(135:0.5)$</span>) -- (<span class="hljs-formula">$(B)+(135:0.5)$</span>) node[midway, above, sloped] {<span class="hljs-formula">$d_x$</span>};</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-27">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-27">&#182;</a>
+              </div>
+              <p>We can provide other line options, like <code>dashed</code> or <code>red</code> to the line. 
+This is an <code>arc</code> command, which begins at a point (<code>A</code>) and follows an arc counterclockwise from angle <code>0</code> to angle <code>45</code> with radius <code>5</code>. Upon termination, we anchor to this node a text box at its east face.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="hljs-tag">\<span class="hljs-name">draw</span></span> [-&gt;, dashed] (A) arc ( 0 : 45 : 5) node[anchor=east] {<span class="hljs-formula">$<span class="hljs-tag">\<span class="hljs-name">theta</span></span>$</span>};
+      <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{tikzpicture}</span></span>
+    <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{center}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-28">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-28">&#182;</a>
+              </div>
+              <p>Captions should go after figures, just before the figure close tag (<code>\end{figure}</code>).</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="hljs-tag">\<span class="hljs-name">caption</span><span class="hljs-string">{Schematic with Title}</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-29">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-29">&#182;</a>
+              </div>
+              <p>Labels <em>must</em> go after captions.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="hljs-tag">\<span class="hljs-name">label</span><span class="hljs-string">{named_schematic}</span></span>
+  <span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{figure}</span></span>
+<span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{document}</span></span></pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>
